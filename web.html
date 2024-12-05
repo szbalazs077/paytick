@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayTick</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Jegyvásárlás a PayTickon</h1>
+    <nav>
+      <ul>
+        <li><a href="#concerts">Koncertek</a></li>
+        <li><a href="#theaters">Színház</a></li>
+        <li><a href="#matches">Focimeccsek</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="concerts" class="event-section">
+    <h2>Koncertek</h2>
+    <div class="event">
+      <h3>Rock Koncert</h3>
+      <p>Helyszín: Papp László Sportaréna</p>
+      <p>Dátum: 2024. december 10.</p>
+      <button onclick="buyTicket('Rock Koncert')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Jazz Est</h3>
+      <p>Helyszín: A38 Hajó</p>
+      <p>Dátum: 2024. december 15.</p>
+      <button onclick="buyTicket('Jazz Est')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>YUNGBLUD</h3>
+      <p>Helyszín: Budapest Park</p>
+      <p>Dátum: 2025. június 13.</p>
+      <button onclick="buyTicket('Yungblud')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Valmar</h3>
+      <p>Helyszín: Papp László Sportaréna</p>
+      <p>Dátum: 2025. május 28.</p>
+      <button onclick="buyTicket('valmar')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Váradi Olasz</h3>
+      <p>Helyszín: Iváncsa Ifi fesztivál</p>
+      <p>Dátum: 2025. május 25.</p>
+      <button onclick="buyTicket('váradi olasz')">Jegy vásárlása</button>
+    </div>
+  </section>
+
+  <section id="theaters" class="event-section">
+    <h2>Színházi előadások</h2>
+    <div class="event">
+      <h3>Hamlet</h3>
+      <p>Helyszín: Nemzeti Színház</p>
+      <p>Dátum: 2024. december 5.</p>
+      <button onclick="buyTicket('Hamlet')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Macbeth</h3>
+      <p>Helyszín: Katona József Színház</p>
+      <p>Dátum: 2024. december 8.</p>
+      <button onclick="buyTicket('Macbeth')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Vuk</h3>
+      <p>Helyszín: Madách Színház</p>
+      <p>Dátum: 2024. november 30.</p>
+      <button onclick="buyTicket('Vuk')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Lánybúcsú - musical</h3>
+      <p>Helyszín: RaM-ArT Színház, Budapest</p>
+      <p>Dátum: 2025. január 3.</p>
+      <button onclick="buyTicket('Lánybúcsú-musical')">Jegy vásárlása</button>
+    </div>
+  </section>
+
+  <section id="matches" class="event-section">
+    <h2>Focimeccsek</h2>
+    <div class="event">
+      <h3>Kecskemét - Diósgyőr</h3>
+      <p>Helyszín: Széktói Stadion, Kecskemét</p>
+      <p>Dátum: 2024. december 07. 13.30</p>
+      <button onclick="buyTicket('Kecskemét - DVTK')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Puskás Akadémia - Győri ETO</h3>
+      <p>Helyszín: Pancho Aréna, Felcsút</p>
+      <p>Dátum: 2024. december 07. 16:45</p>
+      <button onclick="buyTicket('PAFC - ETO')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Paksi FC - MTK</h3>
+      <p>Helyszín: Fehérvári úti Stadion, Paks</p>
+      <p>Dátum: 2024. december 07. 19:15</p>
+      <button onclick="buyTicket('Paks - MTK')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Fehérvár FC - Nyíregyháza</h3>
+      <p>Helyszín: Sóstói Stadion, Székesfehérvár</p>
+      <p>Dátum: 2024. december 08. 14:45</p>
+      <!--<button href="https://jegymester.hu/production/741769/fehervar-fc-ujpest-fc/74001854" onclick="buyTicket('Fehérvár - Nyíregyháza')">Jegy vásárlása</button>-->
+      <a class = "vásárlógomb" href="https://jegymester.hu/production/741769/fehervar-fc-ujpest-fc/74001854" target="_blank">Jegy vásárlása</a>
+    </div>
+    <div class="event">
+      <h3>Debrecen - Újpest</h3>
+      <p>Helyszín: Nagyerdei Stadion, Debrecen</p>
+      <p>Dátum: 2024. december 08. 17:00</p>
+      <button onclick="buyTicket('Debrecen - Újpest')">Jegy vásárlása</button>
+    </div>
+    <div class="event">
+      <h3>Ferencváros - Zalaegerszeg</h3>
+      <p>Helyszín: Groupama Aréna, Budapest</p>
+      <p>Dátum: 2024. december 08. 20:00</p>
+      <!--<button  onclick="buyTicket('Ferencváros - ZTE')">Jegy vásárlása</button>-->
+      <a class="vásárlógomb" href="https://meccsjegy.fradi.hu/" target="_blank">Jegy vásárlása</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024. A szórakozás kezdete – PayTickkel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
